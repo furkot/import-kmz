@@ -1,0 +1,122 @@
+{
+  "destination": "Santa Fe - Boston",
+  "notes": "ddd",
+  "stops": [
+    {
+      "name": "826 East Palace Avenue, Santa Fe, NM 87501, USA",
+      "address": "826 East Palace Avenue, Santa Fe, NM 87501, USA",
+      "coordinates": {
+        "lon": -105.924698,
+        "lat": 35.682785
+      }
+    },
+    {
+      "name": "Shell",
+      "address": "3859-3867 Highway 14, Santa Fe, NM 87508, USA",
+      "coordinates": {
+        "lon": -106.065979,
+        "lat": 35.491661
+      },
+      "duration": 600000,
+      "pin": 25,
+      "url": "http://www.mygasfeed.com/locations/details/94154"
+    },
+    {
+      "name": "The Dickey House Bed & Breakfast",
+      "address": "The Dickey House Bed & Breakfast",
+      "coordinates": {
+        "lon": -92.907585,
+        "lat": 37.33639
+      },
+      "url": "/book/venere?id=436490"
+    },
+    {
+      "name": "Alliance Inn & Suites",
+      "address": "402-460 Historic U.S. 66, St. Robert, MO 65584, USA",
+      "coordinates": {
+        "lon": -92.16024,
+        "lat": 37.82197
+      },
+      "url": "http://www.easytobook.com/en/united-states-of-america/missouri/st-robert/microtel-inn-suites-139992/?hotel_id=139992&utm_campaign=United%20States&utm_term=St.%20Robert&utm_source=code42day&utm_medium=affiliate&amu=280826683#stars=2"
+    },
+    {
+      "name": "Cook, IL, USA",
+      "address": "1011 South State Street, Chicago, IL 60605, USA",
+      "coordinates": {
+        "lon": -87.626953,
+        "lat": 41.869561
+      },
+      "duration": 3600000
+    },
+    {
+      "name": "Swedish American Museum Center",
+      "address": "5211 N. Clark St., Far North, Chicago, IL, 60640",
+      "coordinates": {
+        "lon": -87.668301,
+        "lat": 41.976669
+      },
+      "duration": 3600000,
+      "pin": 33,
+      "url": "http://www.fodors.com/world/north-america/usa/illinois/chicago/review-194863.html"
+    },
+    {
+      "name": "American Science and Surplus",
+      "address": "5316 N. Milwaukee Avenue, Chicago, IL",
+      "coordinates": {
+        "lon": -87.769703,
+        "lat": 41.976855
+      },
+      "duration": 3600000,
+      "pin": 33,
+      "url": "http://www.atlasobscura.com/places/american-science-and-surplus"
+    },
+    {
+      "name": "Red Roof Inn Coldwater",
+      "address": "Willowbrook Lane, Coldwater, MI 49036, USA",
+      "coordinates": {
+        "lon": -84.971803,
+        "lat": 41.933653
+      },
+      "url": "http://www.booking.com/hotel/us/red-roof-inn-coldwater.html?aid=344132"
+    },
+    {
+      "name": "Sheetz",
+      "address": "2411 N Ridge Rd E, Ashtabula, OH",
+      "coordinates": {
+        "lon": -80.761147,
+        "lat": 41.876354
+      },
+      "duration": 600000,
+      "pin": 25,
+      "url": "http://www.mygasfeed.com/locations/details/48723"
+    },
+    {
+      "name": "Embassy Suites Boston/Waltham",
+      "address": "550 Winter Street, Waltham, MA 02451, USA",
+      "coordinates": {
+        "lon": -71.266015,
+        "lat": 42.395993
+      },
+      "url": "http://www.booking.com/hotel/us/embassy-suites-boston-waltham.html?aid=344132"
+    },
+    {
+      "name": "Spellman Museum of Stamps & Postal History",
+      "address": "Weston, MA",
+      "coordinates": {
+        "lon": -71.307111,
+        "lat": 42.348472
+      },
+      "duration": 3600000,
+      "pin": 47,
+      "url": "http://en.wikipedia.org/wiki/Spellman_Museum_of_Stamps_&_Postal_History"
+    },
+    {
+      "name": "Boston, MA",
+      "address": "Boston, MA, USA",
+      "coordinates": {
+        "lon": -71.059773,
+        "lat": 42.358431
+      }
+    }
+  ]
+}

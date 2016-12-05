@@ -1,0 +1,33 @@
+{
+  "name": "furkot-import-kmz",
+  "version": "0.0.0",
+  "description": "Import KMZ files into Furkot.",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@code42day.com",
+    "url": "https://code42day.com"
+  },
+  "repository": "furkot/import-kmz",
+  "license": "MIT",
+  "keywords": [
+    "furkot-import-kmz",
+    "kml",
+    "furkot"
+  ],
+  "dependencies": {
+    "@aredridel/unzip": "^1.0.0",
+    "furkot-import-kml": "^1.0.0"
+  },
+  "devDependencies": {
+    "jshint": "~2",
+    "mocha": "~3",
+    "should": "~11"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
