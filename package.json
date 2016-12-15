@@ -17,7 +17,7 @@
   "dependencies": {
     "@aredridel/unzip": "^1.0.0",
     "debug": "^2.4.4",
-    "furkot-import-kml": "^1.0.0"
+    "furkot-import-kml": "^1.0.1"
   },
   "devDependencies": {
     "jshint": "~2",
