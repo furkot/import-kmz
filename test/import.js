@@ -15,4 +15,21 @@ describe('furkot import kmz', function() {
     });
   });
 
+  it('should raise error on a file that does not contain KML', function(done) {
+    var stream = fs.createReadStream(__dirname + '/fixtures/no-kml-inside.kmz');
+    parse(stream, function(err, trip) {
+      should.exist(err);
+      should.not.exist(trip);
+      done();
+    });
+  });
+
+  it('should raise error on a file that cannot be unzipped', function(done) {
+    var stream = fs.createReadStream(__dirname + '/fixtures/not-a-zip.kmz');
+    parse(stream, function(err, trip) {
+      should.exist(err);
+      should.not.exist(trip);
+      done();
+    });
+  });
 });
