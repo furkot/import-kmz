@@ -19,6 +19,7 @@ describe('furkot import kmz', function() {
     var stream = fs.createReadStream(__dirname + '/fixtures/invalid-kml-inside.kmz');
     parse(stream, function(err, trip) {
       should.exist(err);
+      err.should.have.property('err', 'invalid');
       err.should.have.property('message', 'Unexpected close tag');
       should.not.exist(trip);
       done();
@@ -29,6 +30,7 @@ describe('furkot import kmz', function() {
     var stream = fs.createReadStream(__dirname + '/fixtures/no-kml-inside.kmz');
     parse(stream, function(err, trip) {
       should.exist(err);
+      err.should.be.eql('invalid');
       should.not.exist(trip);
       done();
     });
@@ -38,6 +40,8 @@ describe('furkot import kmz', function() {
     var stream = fs.createReadStream(__dirname + '/fixtures/not-a-zip.kmz');
     parse(stream, function(err, trip) {
       should.exist(err);
+      err.should.have.property('err', 'invalid');
+      err.should.have.property('message');
       should.not.exist(trip);
       done();
     });
