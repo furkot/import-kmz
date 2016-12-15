@@ -1,4 +1,10 @@
 
+1.0.1 / 2016-12-14
+==================
+
+ * report errors when invalid KML found in KMZ
+ * report errors on invalid KMZ files
+
 1.0.0 / 2016-12-04
 ==================
 
