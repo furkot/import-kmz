@@ -1,6 +1,6 @@
 {
   "name": "furkot-import-kmz",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Import KMZ files into Furkot.",
   "author": {
     "name": "Damian Krzeminski",
