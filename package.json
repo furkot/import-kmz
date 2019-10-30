@@ -17,7 +17,7 @@
   "dependencies": {
     "debug": "~2",
     "furkot-import-kml": "^1.0.4",
-    "unzipper": "^0.7.2"
+    "unzipper": "^0.10.5"
   },
   "devDependencies": {
     "jshint": "~2",
