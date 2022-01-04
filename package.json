@@ -15,7 +15,7 @@
     "furkot"
   ],
   "dependencies": {
-    "debug": "~2",
+    "debug": "~2 || ~3 || ~4",
     "furkot-import-kml": "^1.0.4",
     "unzipper": "^0.7.2"
   },
