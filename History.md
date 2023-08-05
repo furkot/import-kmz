@@ -1,4 +1,12 @@
 
+1.1.0 / 2023-08-05
+==================
+
+ * upgrade unzipper to 0.10.11
+ * relax debug dependency
+ * rewrite in modern javascript
+ * replace mocha with tape
+
 1.0.5 / 2019-07-13
 ==================
 
