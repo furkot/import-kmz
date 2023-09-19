@@ -1,6 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][deps-image]][deps-url]
 
 # furkot-import-kmz
 
@@ -34,11 +34,11 @@ MIT © [Damian Krzeminski](https://code42day.com)
 [Furkot]: https://furkot.com
 [KMZ]: https://developers.google.com/kml
 
-[npm-image]: https://img.shields.io/npm/v/furkot-import-kmz.svg
-[npm-url]: https://npmjs.org/package/furkot-import-kmz
+[npm-image]: https://img.shields.io/npm/v/@furkot/import-kmz
+[npm-url]: https://npmjs.org/package/@furkot/import-kmz
 
-[travis-url]: https://travis-ci.org/furkot/import-kmz
-[travis-image]: https://img.shields.io/travis/furkot/import-kmz.svg
+[build-url]: https://github.com/furkot/import-kmz/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/furkot/import-kmz/check.yaml?branch=main
 
-[gemnasium-image]: https://img.shields.io/gemnasium/furkot/import-kmz.svg
-[gemnasium-url]: https://gemnasium.com/furkot/import-kmz
+[deps-image]: https://img.shields.io/librariesio/release/npm/@furkot/import-kmz
+[deps-url]: https://libraries.io/npm/@furkot%2Fimport-kmz
