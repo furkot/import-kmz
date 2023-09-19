@@ -15,8 +15,8 @@
     "furkot"
   ],
   "dependencies": {
-    "debug": "~2 || ~3 || ~4",
-    "furkot-import-kml": "^1.0.4"
+    "@furkot/import-kml": "^2.0.0",
+    "debug": "~2 || ~3 || ~4"
   },
   "devDependencies": {
     "jshint": "~2"

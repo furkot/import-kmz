@@ -2,29 +2,26 @@
 [![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
 
-# furkot-import-kmz
+# @furkot/import-kmz
 
 Import [KMZ] files into [Furkot] road trip planner.
 
 ## Install
 
 ```sh
-$ npm install --save furkot-import-kmz
+$ npm install --save @furkot/import-kmz
 ```
 
 ## Usage
 
-Use as a transform stream: pipe network responses, files etc. and listen on `data` event.
+Use with a blob created from `File` or `fetch` response.
 
 ```js
-var furkotImportKmz = require('furkot-import-kmz');
-var request = require('getlet');
+const importKmz = require('@furkot/import-kmz');
 
-request('https://example.com/my.kmz')
-  .pipe(furkotImportKmz)
-  .on('data', function(trip) {
-    console.log(trip);
-  });
+const response = fetch('https://example.com/my.kmz');
+const blob = await response.blob();
+const trip = await importKmz(blob);
 ```
 
 ## License

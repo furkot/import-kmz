@@ -1,48 +1,34 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 
-const fs = require('fs');
+const fs = require('node:fs');
+const path = require('node:path');
+
 const parse = require('..');
 
-test('should parse kmz', function (t, done) {
-  const stream = fs.createReadStream(`${__dirname}/fixtures/usa.kmz`);
-  parse(stream, (err, trip) => {
-    const expected = require('./fixtures/usa.json');
+function openAsBlob(name) {
+  const filename = path.join(__dirname, name);
+  return fs.openAsBlob(filename);
+}
 
-    assert.ifError(err);
-    assert.deepEqual(trip, expected);
-    done();
-  });
+test('should parse kmz', async function () {
+  const blob = await openAsBlob('/fixtures/usa.kmz');
+  const trip = await parse(blob);
+  const expected = require('./fixtures/usa.json');
+  assert.deepEqual(trip, expected);
 });
 
-test('should raise error on a file that contains invalid KML', function (t, done) {
-  const stream = fs.createReadStream(`${__dirname}/fixtures/invalid-kml-inside.kmz`);
-  parse(stream, (err, trip) => {
-    assert.ok(err, 'error should exists');
-    assert.equal(err.err, 'invalid');
-    assert.equal(err.message, 'Unexpected close tag');
-    assert.ok(!trip, 'trip should not exist');
-    done();
-  });
+test('should raise error on a file that contains invalid KML', async function () {
+  const stream = await openAsBlob('/fixtures/invalid-kml-inside.kmz');
+  await assert.rejects(parse(stream), /Unclosed tag/i);
 });
 
-test('should raise error on a file that does not contain KML', function (t, done) {
-  const stream = fs.createReadStream(`${__dirname}/fixtures/no-kml-inside.kmz`);
-  parse(stream, (err, trip) => {
-    assert.ok(err, 'error should exists');
-    assert.equal(err, 'invalid');
-    assert.ok(!trip, 'trip should not exist');
-    done();
-  });
+test('should raise error on a file that does not contain KML', async function () {
+  const stream = await openAsBlob('/fixtures/no-kml-inside.kmz');
+  await assert.rejects(parse(stream), /no KML file found/i);
 });
 
-test('should raise error on a file that cannot be unzipped', function (t, done) {
-  const stream = fs.createReadStream(`${__dirname}/fixtures/not-a-zip.kmz`);
-  parse(stream, (err, trip) => {
-    assert.ok(err, 'error should exists');
-    assert.equal(err.err, 'invalid');
-    assert.ok('message' in err, 'should have property message');
-    assert.ok(!trip, 'trip should not exist');
-    done();
-  });
+test('should raise error on a file that cannot be unzipped', async function () {
+  const stream = await openAsBlob('/fixtures/not-a-zip.kmz');
+  await assert.rejects(parse(stream), /invalid signature/i);
 });
