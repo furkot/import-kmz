@@ -20,8 +20,7 @@
     "unzipper": "^0.10.11"
   },
   "devDependencies": {
-    "jshint": "~2",
-    "tape": "~5"
+    "jshint": "~2"
   },
   "scripts": {
     "test": "make check"
