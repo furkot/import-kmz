@@ -1,5 +1,5 @@
 {
-  "name": "furkot-import-kmz",
+  "name": "@furkot/import-kmz",
   "version": "1.1.0",
   "description": "Import KMZ files into Furkot.",
   "author": {
@@ -15,13 +15,11 @@
     "furkot"
   ],
   "dependencies": {
-    "debug": "~2 || ~3 || ~4",
-    "furkot-import-kml": "^1.0.4",
-    "unzipper": "^0.10.11"
+    "@furkot/import-kml": "^2.0.0",
+    "debug": "~2 || ~3 || ~4"
   },
   "devDependencies": {
-    "jshint": "~2",
-    "tape": "~5"
+    "jshint": "~2"
   },
   "scripts": {
     "test": "make check"
