@@ -1,4 +1,10 @@
 
+2.0.0 / 2023-09-20
+==================
+
+ * rewrite using browser web streams
+ * change project name to @furkot/import-kmz
+
 1.1.0 / 2023-08-05
 ==================
 
