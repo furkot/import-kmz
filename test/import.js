@@ -4,6 +4,8 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 
+require('./deflate-raw');
+
 const parse = require('..');
 
 function openAsBlob(name) {
@@ -13,6 +15,13 @@ function openAsBlob(name) {
 
 test('should parse kmz', async function () {
   const blob = await openAsBlob('/fixtures/usa.kmz');
+  const trip = await parse(blob);
+  const expected = require('./fixtures/usa.json');
+  assert.deepEqual(trip, expected);
+});
+
+test('should parse deflated kmz', async function () {
+  const blob = await openAsBlob('/fixtures/usa.deflated.kmz');
   const trip = await parse(blob);
   const expected = require('./fixtures/usa.json');
   assert.deepEqual(trip, expected);
