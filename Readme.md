@@ -17,7 +17,7 @@ $ npm install --save @furkot/import-kmz
 Use with a blob created from `File` or `fetch` response.
 
 ```js
-const importKmz = require('@furkot/import-kmz');
+import importKmz = from '@furkot/import-kmz';
 
 const response = fetch('https://example.com/my.kmz');
 const blob = await response.blob();
