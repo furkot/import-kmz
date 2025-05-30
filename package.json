@@ -19,7 +19,7 @@
     "debug": "~2 || ~3 || ~4"
   },
   "devDependencies": {
-    "jshint": "~2"
+    "@biomejs/biome": "^1.9.4"
   },
   "scripts": {
     "test": "make check"
