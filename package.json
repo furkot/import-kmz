@@ -9,7 +9,10 @@
     "email": "pirxpilot@code42day.com",
     "url": "https://code42day.com"
   },
-  "repository": "furkot/import-kmz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkot/import-kmz.git"
+  },
   "license": "MIT",
   "keywords": [
     "furkot-import-kmz",
