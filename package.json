@@ -17,7 +17,7 @@
     "furkot"
   ],
   "dependencies": {
-    "@furkot/import-kml": "^2.0.0",
+    "@furkot/import-kml": "~3",
     "debug": "~2 || ~3 || ~4"
   },
   "devDependencies": {
