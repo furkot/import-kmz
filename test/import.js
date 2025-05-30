@@ -1,18 +1,17 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import test from 'node:test';
 
-const fs = require('node:fs');
-const path = require('node:path');
-
-const parse = require('..');
+import parse from '../lib/import.js';
 
 function openAsBlob(name) {
-  const filename = path.resolve(__dirname, name);
+  const filename = path.resolve(import.meta.dirname, name);
   return fs.openAsBlob(filename);
 }
 
 function readJSON(name) {
-  const filename = path.resolve(__dirname, name);
+  const filename = path.resolve(import.meta.dirname, name);
   return JSON.parse(fs.readFileSync(filename, 'utf8'));
 }
 
